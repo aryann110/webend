@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+.header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem 7%;
+    /* border-bottom: var(--border); */
+    /* position: fixed; */
+    top:0; left: 0; right: 0;
+    border: 1px solid whitesmoke;
+    
+    
+}
+.logo img{
+    height: 40px;
+    width: 50px;
+}
+.header .logo{
+    display: flex;
+    
+}
+
+.logo svg{
+    height: 32px;
+    fill: #29d9d5;
+}
+.logo h2{
+    color: black;
+    font-size: 2rem;
+}
+.btn{
+    padding: 10px 20px;
+    border: 2px solid #29d9d5;;
+    color: #29d9d5;
+    /* border-radius: 30px; */
+    display: inline-block;
+}
+.header .navb a{
+    margin:0 .7rem;
+    font-size: 1.2rem;
+    color:black;
+    margin: 20px;
+    border: 0px;
+}
+.header .navb a:hover{
+    color: blue;
+}
+.johnimg{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.boxes{
+    height: 100vh;
+    margin: 40px;
+}
+.boxes .cart svg{
+height: 30px;
+width: 30px;
+margin-top: 5px;
+padding-right: 5px;
+fill: blue;
+}
+.cart-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid black;
+} 
+.cart-container .cart{
+    border: 1px solid black;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+.cart-container .cart:nth-of-type(1){
+    padding: 10px;
+    border: 0px;
+} 
+.cart-container .cart:nth-of-type(1) .btn{
+    width: 100px;
+    border: 1px solid black;
+    padding: 1px 3px;
+} 
+.cart-container .cart:nth-of-type(1){
+    width: 300px;
+} 
+.cart-container .cart:nth-of-type(4){
+    padding-bottom: 10px;
+} 
+.cart-container .cart:nth-of-type(4) p{
+    font-size: 15px;
+} 
+.cart-container .cart:nth-of-type(4) .btn{
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px 3px;
+    background-color: dodgerblue;
+    color: white;
+    
+} 
+.container{
+    background: whitesmoke;
+    color: white;
+    display: grid;
+    height: 150vh;
+    grid-template-columns: repeat(2,25% 75%);
+    grid-template-rows: repeat(2,25% 75%);
+    grid-template-areas: 
+    'nav main '
+    'nav main';
+}
+main,nav{
+    border: 1px solid black;
+}
+
+nav{
+    grid-area: nav;
+}
+main{
+grid-area: main;
+}
+.show{
+    margin: 3%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+} 
+.show .cart svg{
+    height: 50px;
+    width: 60px;
+}
+.show .cart{
+    background-color: white;
+    height: 400px;
+    padding: 20px 30px;
+}
+.show .cart:hover{
+    transform: scale(1.1);
+}
+.show .cart h2{
+    font-size: 1.3rem;
+    color: black;
+}
+.show .cart p{
+    font-size: 0.8rem;
+    color: black;
+}
+.show .cart p:nth-of-type(2){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.show .cart p:nth-of-type(3){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.butn{
+    border: 0px solid black;
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.5rem 1rem;
+    font-size: 1rem;
+    color:#fff;
+    background-color: dodgerblue;
+}
+.botn{
+    border: 0px solid black;
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.5rem 1rem;
+    font-size: 1rem;
+    color:black;
+    background-color: grey;
+}
+.bottn{
+    border: 0px solid black;
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.2rem 0.5rem;
+    font-size: 0.6rem;
+    color:darkblue;
+    background-color: skyblue;
+}
+.create{
+    background-color: deepskyblue;
+    padding: 20px 2rem;
+}
+.create h2{
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+.create p{
+    font-size: 0.8rem;
+    color: black;
+}
+.boxes .typer{
+    background-color: whitesmoke;
+    padding: 20px 2rem;
+}
+.boxes .typer p{
+    color: black;
+}
+
